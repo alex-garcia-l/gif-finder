@@ -2,6 +2,7 @@
   "name": "03_gif_expert_app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://alex-garcia-l.github.io/gif-finder",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
