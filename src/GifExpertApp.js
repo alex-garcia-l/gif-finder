@@ -3,15 +3,14 @@ import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
-export const GifExpertApp = () => {
+export const GifExpertApp = ({ defaultCategories = [] }) => {
 
-    const [categories, setCategories] = useState(['Pokemon']);
+    const [categories, setCategories] = useState(defaultCategories);
     
     return (
-        <>
-            <h1>GifExpertApp</h1>
+        <div className='container'>
+            <h1>Gifs Finder</h1>
             <AddCategory setCategories={ setCategories } />
-            <hr />
             {
                 categories.map((category) => (
                     <GifGrid
@@ -20,6 +19,6 @@ export const GifExpertApp = () => {
                     />
                 ))
             }
-        </>
+        </div>
     )
 }
